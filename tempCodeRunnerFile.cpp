@@ -1,1 +1,2 @@
-greater
+
+        if(isPrime[i]){
