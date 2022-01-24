@@ -1,2 +1,1 @@
-
-        if(isPrime[i]){
+n & (n-1)
