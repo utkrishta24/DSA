@@ -1,1 +1,2 @@
-count & (1<<j)
+
+//         for (int j = i; j < n; j++)

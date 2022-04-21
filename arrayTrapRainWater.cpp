@@ -3,16 +3,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//naive
+//naive 0(n^2)
 // void collected(int bars[],int n){
 // int res=0;
 // for(int i=1;i<n-1;i++){
+
 //     int lMax=bars[i];
 //     for(int j=0;j<i;j++)
 //     lMax=max(lMaxmbars[j]);
+
 //     int rMax=bars[i];
 //     for(int j=i+1;j<n;j++)
 //     rMax=max(rMaxmbars[j]);
+
 //     res=res+(min(lMax,rMax)-bars[i]);
 // }
 // cout<<res;

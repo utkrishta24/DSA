@@ -19,3 +19,5 @@ int main(){
     powerSet(str);
 return 0;
 }
+
+// 0(2^n *n)
