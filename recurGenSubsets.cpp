@@ -4,8 +4,11 @@ using namespace std;
 //0(2^n)
 //naive
 int sumSub(int arr[], int n, int sum)
-{
-    return 
+{   if(n==0)
+        return (sum==0)?1:0;
+    
+    return sumSub(arr,n-1,sum)+
+           sumSub(arr,n-1,sum-arr[n-1]);
 }
 
 int main()
