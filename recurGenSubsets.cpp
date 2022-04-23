@@ -1,17 +1,21 @@
 #include <iostream>
 using namespace std;
-
-void ToH(int n, char A, char b, char C)
+//count no. of subsets with given sum
+//0(2^n)
+//naive
+int sumSub(int arr[], int n, int sum)
 {
-    if(n==1){
-        cout<<"Move 1 from "<<A<<" to "<<C<<endl;
-        return;
-    }
-    ToH(n-1,A,C,B);
-    cout<<"Move "<<n<<" from "<<A<<" to "<<C<<endl;
-    ToH(n-1,B,A,C);
+    return 
 }
 
 int main()
 {
+    int n,sum;
+    cin >> n>>sum;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    int res=sumSub(arr,n,sum);
+    cout<<res;
+    return 0;
 }
