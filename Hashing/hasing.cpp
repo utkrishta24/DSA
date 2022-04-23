@@ -12,4 +12,3 @@
 //getting data from databases
 //etc.
 
-//Direct address table:
