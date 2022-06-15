@@ -86,3 +86,7 @@ struct MyHash
         return false;
     }
 };
+
+//how to handle the cases when -1 and -2 are input keys?
+//library impl. empty checked by null (pointer and references)
+//for deleted : create a dummy node and and when deleted its pointer or reference is stored
