@@ -22,7 +22,7 @@ void printFreq(int arr[], int n)
         }
 }
 
-// efficient O(n) AS: O(n)
+// efficient 0(n) AS: O(n)
 int printFreq(int arr[], int n)
 {
     unordered_map<int , int> h;
