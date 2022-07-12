@@ -11,7 +11,7 @@ int sortRotateSearch(int arr[], int x){
     return -1;
 }
 
-//efficient binary search 
+//efficient binary search O(logn)
 int sortRotateSearch(int arr[], int n,int x){
     int low=0, high=n-1;
     while (low<=high)
