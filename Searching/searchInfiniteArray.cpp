@@ -14,6 +14,7 @@ int searchInInfinite(  int arr[], int x )
     }
 }
 
+//unbounded binary search
 // efficient:
 //0(log(position))
 int searchInInfinite(int arr[], int x)
