@@ -70,8 +70,26 @@ int findRepeating(int arr[], int n){
     return slow;
 }
 
-
-
+//for original constaints
+int findRepeating(int arr[], int n){
+    int slow =arr[0]+1, fast=arr[0]+1;
+    //1st
+    do
+    {
+        slow=arr[slow]+1;
+        fast=arr[arr[fast]+1]+1;
+    } while (slow!=fast);
+    //2nd
+    slow= arr[0]+1;
+    while (slow!=fast)
+    {
+        slow=arr[slow]+1;
+        fast=arr[fast]+1;
+    }
+    return slow-1;
+}
+//why we increase slow and fast by 1
+//self loops and loops of 0 and 1 
 int main()
 {
     
