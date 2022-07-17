@@ -9,24 +9,57 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//................Merge Two Sorted arrays................
+
+// naive
+// O((m+n)*log(m+n))
+// AS 0(m+n)
+// void merge(int a[], int b[], int m, int n)
+// {
+//     int c[m + n];
+//     for (int i = 0; i < m; i++)
+//         c[i] = a[i];
+//     for (int i = 0; i < n; i++)
+//         c[m + i] = b[i];
+//     sort(c, c + m + n);
+//     for (int i = 0; i < m + n; i++)
+//         cout << c[i] << " ";
+// }
+
 // efficient
-void selectionSort(int arr[], int n)
+// 0(m+n)
+void merge(int a[], int b[], int m, int n)
 {
-    for (int i = 0; i < n; i++)
+    int i = 0, j = 0;
+    while (i < m && j < n)
     {
-        int min_ind = i;
-        for (int j = i + 1; j < n; j++)
-            if (arr[j] < arr[min_ind])
-                min_ind = j;
-        swap(arr[min_ind], arr[i]);
+        if (a[i] <= b[j])
+        {
+            cout << a[i] << " ";
+            i++;
+        }
+        else
+        {
+            cout << b[j] << " ";
+            j++;
+        }
+    }
+    while (i < m)
+    {
+        cout << a[i] << " ";
+        i++;
+    }
+    while (j < n)
+    {
+        cout << b[j] << " ";
+        j++;
     }
 }
 
 int main()
 {
-    int arr[] = {2, 10, 8, 7};
-    selectionSort(arr, 4);
-    for (int i = 0; i < 4; i++)
-        cout << arr[i] << " ";
+    int a[] = {2, 7, 8, 15};
+    int b[] = {3, 15, 57, 89, 100};
+    merge(a, b, 4, 5);
     return 0;
 }
