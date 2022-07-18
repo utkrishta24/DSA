@@ -7,7 +7,7 @@ using namespace std;
 // AS:0(1)
 
 // pivot is not at its correct position
-// just ensures that upto i less than pivot elements are there adn after that greater or equal elements
+// just ensures that upto i less than pivot elements are there and after that greater or equal elements
 
 // corner case 1: pivot is smaller than all other= i=0,j=0 returns
 // corner case 2: pivot is greater than all other= index last
