@@ -26,7 +26,7 @@ void qsort(int arr[], int l, int h)
     if (l < h)
     {
         int p = hPartition(arr, l, h);
-        qsort(arr, l, p - 1);
+        qsort(arr, l, p);
         qsort(arr, p + 1, h);
     }
 } // considering hoare partition
@@ -41,3 +41,7 @@ int main()
         cout << arr[i] << " ";
     return 0;
 }
+
+
+// hoares is three times faster
+// not stable
