@@ -26,7 +26,7 @@ int hPartition(int arr[], int l, int h)
         do
         {
             j--;
-        } while (arr[i] > pivot);
+        } while (arr[j] > pivot);
         if (i >= j)
             return j;
         swap(arr[i], arr[j]);
@@ -39,7 +39,7 @@ int main()
     int l = 0;
     int h = 7;
     cout << hPartition(arr, l, h);
-    for (int i = 0; i <= h; i++)
-        cout << arr[i];
+    for (int i = l; i <= h; i++)
+        cout << arr[i]<<" ";
     return 0;
 }
