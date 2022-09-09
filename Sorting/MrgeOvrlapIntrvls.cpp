@@ -10,7 +10,7 @@ using namespace std;
 
 struct Interval
 {
-    int start;
+    int st;
     int end;
 };
 
@@ -23,5 +23,28 @@ struct Interval
 // or
 // sort by end time in decreasing order
 
-//sorted: x1,x2,x3,x4.....xi-1,xi -> mergerd: m1,m2,m3,m4...mj-1,mj
-   
+// sorted: x1,x2,x3,x4.....xi-1,xi -> mergerd: m1,m2,m3,m4...mj-1,mj
+// xi.start >= mj.start
+// & mj-1.end < mj.start
+// then  xi.start > mj-1.end
+
+void mergeIntervals(Interval arr[], int n)
+{
+    sort(arr, arr + n, myComp);
+    int res = 0;
+    for (int i = 1; i < n; i++)
+    {
+        if (arr[res].end >= arr[i].st)
+        {
+            arr[res].end = max(arr[res].end, arr[i].end);
+            arr[res].st = max(arr[res].st, arr[i].st);
+        }
+        else
+        {
+            res++;
+            arr[res] = arr[i];
+        }
+    }
+    for (int i = 0; i <= res; i++)
+        cout << arr[i].st << " " << arr[i].end << endl;
+}
