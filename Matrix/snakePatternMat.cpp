@@ -1,0 +1,1 @@
+// first row should be printed from left to right, second row from right to left, and so on
