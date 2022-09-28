@@ -13,7 +13,7 @@
 //     int count=0;
 //     while(facto%10==0){
 //         count++;
-//         facto/=10;
+   facto/=10;
 //     }
 //     return count;
 // }
@@ -36,7 +36,6 @@ int zero(int n){
         count=count+(n/i);
     return count;
 }
-
 int main(){
 int n;
 cin>>n;
