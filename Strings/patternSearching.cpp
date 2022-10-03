@@ -10,9 +10,9 @@
 
 // ......Preprocess Pattern....
 
-// Rabin Karp O((n-m+1)*m) Better than Naive on avg
+// Rabin Karp O((n-m+1)*m) Better than Naive on Avg
 // KMP O(n)
 
 // ......Preprocess text....
 
-// Suffix tree O(m)
+// Suffix Tree O(m) (Based on Trie Data Structure)
