@@ -1,6 +1,6 @@
 // a pair (arr[i],arr[j]) forms an inversion when
 // i<j and arr[i]>arr[j]
-// 0 in sorted
+// 0(n2) in sorted
 // max in reverse sorted
 
 #include <bits/stdc++.h>
