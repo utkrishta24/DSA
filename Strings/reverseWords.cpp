@@ -28,7 +28,9 @@ void reverseWords(char str[], int n)
             start = end + 1;
         }
     }
+    cout << str<<endl;
     reverse(str, start, n - 1);
+    cout << str<<endl;
     reverse(str, 0, n - 1);
     cout << str;
 }
