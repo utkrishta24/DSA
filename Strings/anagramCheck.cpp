@@ -34,6 +34,6 @@ int main()
     string s1 = "geeksforgeeks";
     string s2 = "grges";
     cout << anagram(s1, s2) << endl;
-    cout << anagramEff(s1, s2, s1.length(), s2.length());
+    cout << anagramEff(s1, s2);
     return 0;
 }

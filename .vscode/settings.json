@@ -95,5 +95,6 @@
         "xutility": "cpp",
         "ios": "cpp",
         "xiosbase": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve"
 }
