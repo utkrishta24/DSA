@@ -56,7 +56,7 @@ void preorder(Node *root)
 // optimized
 // O(n)
 // AS O(h)
-void postorder(Node *root)
+void preorderOpti(Node *root)
 {
     if (root == NULL)
         return;
