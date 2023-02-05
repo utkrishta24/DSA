@@ -100,6 +100,8 @@ void printHCodes(int arr, int freq, int n)
     printCodes(h.top(), "");
 }
 
+// O(nlogn)
+// AS O(n)
 int main()
 {
     char arr[] = {'a', 'd', 'e', 'f'};
