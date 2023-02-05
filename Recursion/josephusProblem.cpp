@@ -29,6 +29,7 @@ int jos(int n, int k)
     else
         return (jos(n - 1, k) + k) % n;
 }
+//solves problem where index starts with 1
 int myJos(int n, int k)
 {
     return jos(n, k) + 1;
