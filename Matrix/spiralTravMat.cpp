@@ -17,12 +17,12 @@ void Spiral(int arr[n][n])
             cout << arr[i][right] << " ";
         right--;
         if (top <= bottom)
-              for (int i = right; i >= left; i--)
-                cout<<arr[bottom][i]<<" ";
+            for (int i = right; i >= left; i--)
+                cout << arr[bottom][i] << " ";
         bottom--;
         if (left <= right)
-              for (int i = bottom; i >= top; i--)
-                cout<<arr[i][left]<<" ";
+            for (int i = bottom; i >= top; i--)
+                cout << arr[i][left] << " ";
         left++;
     }
 }
