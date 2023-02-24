@@ -2,7 +2,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 // naive
 int petrolpump(int petrol[], int dist[], int n)
 {
@@ -24,7 +23,6 @@ int petrolpump(int petrol[], int dist[], int n)
 }
 
 // efficient
-
 class petrolPump
 {
 public:
@@ -58,6 +56,5 @@ int main()
     int n = sizeof(arr) / sizeof(arr[0]);
     int start = printTour(arr, n);
     (start == -1) ? cout << "No solution" : cout << "Start = " << start;
-
     return 0;
 }
