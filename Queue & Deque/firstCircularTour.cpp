@@ -22,7 +22,37 @@ int petrolpump(int petrol[], int dist[], int n)
     return -1;
 }
 
-// efficient
+// better
+// use a deque
+// 1 keep adding items to the end of deque while curr_petrol is greater than equal to 0
+// 2 keep removing items from the front of the deque while curr_petrol is negative
+
+// efficient: one traversal
+//  if curr petrol becomes negative at pi then none of the petrol pumps from p0 to pi can be solution
+//  p0,p1,...,pi-1,pi,pi+1,..pn-1
+// let pi be first petrol pump where curr petrol becomes negative, then
+//  curr petrol= j=0 to i sigma (petrol[j]-dist[j])
+
+int firstPetrol(int petrol, int dist, int n)
+{
+    int start = 0;
+    int curr_pet = 0;
+    int prev_pet = 0;
+    for (int i = 0; i < n; i++)
+    {
+        curr_pet += (petrol[i] - dist[i]);
+        if (curr_pet < 0)
+        {
+            start = i + 1;
+            prev_pet += curr_pet;
+            curr_pet = 0;
+        }
+    }
+    return ((curr_pet + prev_pet) >= 0) ? (start + 1) : -1;
+}
+
+
+
 class petrolPump
 {
 public:
