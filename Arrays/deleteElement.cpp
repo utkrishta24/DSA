@@ -1,4 +1,6 @@
 #include<iostream>
+#include<bits/stdc++.h>
+//to delete item
 using namespace std;
 void del(int arr[], int n, int pos){
     for(int i=pos;i<n;i++)
