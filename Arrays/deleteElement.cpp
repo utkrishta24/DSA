@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 void del(int arr[], int n, int pos){
     for(int i=pos;i<n;i++)
